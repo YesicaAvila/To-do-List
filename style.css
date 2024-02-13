@@ -1,0 +1,134 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: #001527;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Permanent Marker', cursive;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    padding: 6rem;
+}
+
+.add-form {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.input-container {
+    display: flex;
+}
+
+.input-text {
+    display: flex;
+    width: 350px;
+    height: 35px;
+    border-radius: 10px;
+    background: #FCF4E1;
+    backdrop-filter: blur(2px);
+    padding: 10px;
+}
+
+.input-text::placeholder {
+    color: #9BA1A8;
+    font-size: 0.9rem;
+}
+
+.add-btn {
+    width: 112px;
+    height: 35px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f00000, #dc281e);
+    font-family: 'Permanent Marker';
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.delete-btn {
+    cursor: pointer;
+    width: 20px;
+}
+
+.task-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: min(550px, 90%);
+    gap: 1rem
+}
+
+.task-list li {
+    border-radius: 10px;
+    border: #fff double;
+    background: linear-gradient(to right, #4b79a1, #283e51);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 18px 25px;
+    color: white;
+    font-size: 20px;
+}
+.img-empty {
+    width: 28%;
+}
+
+.deleteAll-btn {
+    margin-top: 30px;
+    background: #BF0603;
+    cursor: pointer;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Permanent Marker';
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;    ;
+}
+.hidden {
+    visibility: hidden;
+}
+
+.add-btn:hover,
+.deleteAll-btn:hover {
+    background: #8d0801;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 50px 0px;
+}
+
+
+

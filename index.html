@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueris.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="todo-container">
+        <h1>To Do List</h1>
+        <form class="add-form">
+            <div class="input-container">
+                <input 
+                    type="text"
+                    class="input-text"
+                    placeholder="Ingresá una tarea" 
+                />
+            </div>
+            <button class="add-btn">Agregar</button>
+        </form>
+    </section>
+    <ul class="task-list"></ul>
+    <img src="./img/cartoon.png" alt="Imagen sin tareas" class="img-empty">
+    <button class="deleteAll-btn">Borrar Tareas</button>
+    <footer class="footer">To Do List (Derechos Reservados)</footer>
+    <script src="main.js"></script>
+</body>
+</html>
