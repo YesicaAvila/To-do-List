@@ -36,6 +36,13 @@ const hideImgLazy = () => {
     }
 };
 
+const updateTasks = () => {
+    renderTaskList(tasks);
+    saveLocalStorage(tasks);
+    hideDeleteAll(tasks);
+    hideImgLazy();
+};
+
 const addTask = (e) => {
     e.preventDefault();
     const taskName = input.value.trim().replace(/\s+/g, " ");
@@ -53,10 +60,7 @@ const addTask = (e) => {
 
     tasks = [ ...tasks, {name: taskName}]
     input.value = "";
-    renderTaskList(tasks);
-    saveLocalStorage(tasks);
-    hideDeleteAll(tasks);
-    hideImgLazy();
+    updateTasks();
 };
 
 const removeTask = (e) => {
@@ -65,18 +69,12 @@ const removeTask = (e) => {
     }
     const filterName = e.target.dataset.name;
     tasks = tasks.filter((task) => task.name !== filterName);
-    renderTaskList(tasks);
-    saveLocalStorage(tasks);
-    hideDeleteAll(tasks);
-    hideImgLazy();
+    updateTasks();
 };
 
 const removeAll = () => {
     tasks = [];
-    renderTaskList(tasks);
-    saveLocalStorage(tasks);
-    hideDeleteAll(tasks);
-    hideImgLazy();
+    updateTasks();
 };
 
 const init = () => {
